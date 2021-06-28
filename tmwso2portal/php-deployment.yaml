@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
       - name: portaltmwso2
-        image: tmwso2portal/tmwso2portal
+        image: squall8985/tmwso2portal
         imagePullPolicy: Always
         ports:
         - containerPort: 8081
