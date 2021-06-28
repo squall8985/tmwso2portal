@@ -1,10 +1,10 @@
 <?php
 // SQL server connection information
 $sql_details = array(
-    "user" => "root",
+    "user" => "wso_app",
     "pass" => "",
-    "db"   => "tmPortal",
-    "host" => "localhost"
+    "db"   => "Pswd2019",
+    "host" => "172.20.196.182"
 );
 
 $conn = mysqli_connect("localhost","root","","tmportal");
