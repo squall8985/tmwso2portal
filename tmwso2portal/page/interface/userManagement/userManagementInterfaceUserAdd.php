@@ -32,7 +32,7 @@ if(!$conn) {
     die('Could not connect: ' . mysql_error());
 }
 
-$sql = "INSERT INTO sp_users (name, username, password, role_dashboard, role_business_event, role_online, role_batch, role_sms, role_query, role_user_management) values ". 
+$sql = "INSERT INTO SP_USERS (name, username, password, role_dashboard, role_business_event, role_online, role_batch, role_sms, role_query, role_user_management) values ". 
        "('$name', ".
        "'$username', ".
        "'$password', ".

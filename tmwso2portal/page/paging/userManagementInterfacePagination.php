@@ -11,7 +11,7 @@ $search3 = $_GET["search3"];
 $search4 = $_GET["search4"];
 
 // Table Name
-$table = "sp_users";
+$table = "SP_USERS";
 
 // Table's primary key
 $primaryKey = "id";

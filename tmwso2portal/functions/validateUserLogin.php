@@ -9,11 +9,11 @@ $username= $_POST['username'];
 $password = $_POST['pass'];
 
 // Create query
-$select = "SELECT * FROM sp_users WHERE username='$username' AND password='$password'";
+$select = "SELECT * FROM SP_USERS WHERE username='$username' AND password='$password'";
 if ($result = mysqli_query($conn, $select)) {
     if (mysqli_num_rows($result) == 1) {
         // Login Successful
-        $query = "SELECT name, username, status, id, status, role_dashboard, role_business_event, role_online, role_batch, role_sms, role_query, role_user_management FROM sp_users WHERE username='$username' AND password='$password'";
+        $query = "SELECT name, username, status, id, status, role_dashboard, role_business_event, role_online, role_batch, role_sms, role_query, role_user_management FROM SP_USERS WHERE username='$username' AND password='$password'";
         $data = mysqli_fetch_assoc(mysqli_query($conn, $query));
         
         $status = $data["status"];
@@ -49,7 +49,7 @@ if ($result = mysqli_query($conn, $select)) {
             $_SESSION["ROLE_USER_MANAGEMENT"] = $role_user_management;
             $_SESSION["RANDOM"] = $random;
 
-            $update = "UPDATE sp_users SET last_login_timestamp = NOW(), special = '$random' WHERE id=$userID";
+            $update = "UPDATE SP_USERS SET last_login_timestamp = NOW(), special = '$random' WHERE id=$userID";
             
             mysqli_query($conn, $update);
             

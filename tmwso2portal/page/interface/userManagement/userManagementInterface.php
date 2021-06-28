@@ -10,7 +10,7 @@ $query = "SELECT DATE_FORMAT(created_timestamp, '%Y-%m-%d %H:%i:%s') as created_
                  username,
                  name,
                  status
-                 FROM sp_users
+                 FROM SP_USERS
                  WHERE id = '".$id."'";
 
 if ($result = mysqli_query($conn, $query)) {

@@ -31,7 +31,7 @@ if(!$conn) {
     die('Could not connect: ' . mysql_error());
 }
 
-$sql = "UPDATE sp_users SET ".
+$sql = "UPDATE SP_USERS SET ".
        "name='$name', ".
        "role_dashboard=$role_dashboard, ".
        "role_business_event=$role_business, ".

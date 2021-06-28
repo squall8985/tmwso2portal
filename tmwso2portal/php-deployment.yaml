@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
       - name: portaltmwso2
-        image: squall8985/tmwso2portal
+        image: harbor.dev.kubix.tm.com.my/wso2sit/tmwso2portal:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8081

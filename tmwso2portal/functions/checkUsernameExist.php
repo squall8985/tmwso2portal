@@ -6,7 +6,7 @@ include ('../DBConn/connectionInfo.php');
 $username = $_POST['username'];
 
 // Create query
-$query = "SELECT username FROM sp_users WHERE username='$username'";
+$query = "SELECT username FROM SP_USERS WHERE username='$username'";
 
 if($result = mysqli_query($conn, $query)) {
     $data = mysqli_fetch_assoc($result);

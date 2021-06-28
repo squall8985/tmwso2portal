@@ -6,7 +6,7 @@ require_once('../../../functions/auth.php');
 $id = $_GET["id"];
 
 // Table Name
-$table = "sp_users";
+$table = "SP_USERS";
 
 // Table's primary key
 $primaryKey = "id";

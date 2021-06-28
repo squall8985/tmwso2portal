@@ -10,7 +10,7 @@ if(!$conn) {
     die('Could not connect: ' . mysql_error());
 }
 
-$sql = "UPDATE sp_users SET password='$password'".
+$sql = "UPDATE SP_USERS SET password='$password'".
        " WHERE id=$id";
 
 $exec = mysqli_query($conn, $sql);

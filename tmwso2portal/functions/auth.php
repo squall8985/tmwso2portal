@@ -14,7 +14,7 @@ if (!isset($_SESSION["SESS_MEMBER_ID"]) || (trim($_SESSION["SESS_MEMBER_ID"]) ==
         $id = $_SESSION["SESS_MEMBER_ID"];
         $random = $_SESSION["RANDOM"];
         
-        $select = "SELECT * FROM sp_users WHERE id=$id";
+        $select = "SELECT * FROM SP_USERS WHERE id=$id";
         if ($result = mysqli_query($conn, $select)) {
             if (mysqli_num_rows($result) == 1) {
                 $data = mysqli_fetch_assoc(mysqli_query($conn, $select));

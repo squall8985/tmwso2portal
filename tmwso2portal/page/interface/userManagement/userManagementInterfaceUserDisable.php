@@ -17,7 +17,7 @@ if(!$conn) {
     die('Could not connect: ' . mysql_error());
 }
 
-$sql = "UPDATE sp_users SET status=$statusTemp".
+$sql = "UPDATE SP_USERS SET status=$statusTemp".
        " WHERE id=$id";
 
 $exec = mysqli_query($conn, $sql);
