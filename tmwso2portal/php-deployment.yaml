@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: tmwso2portal
+spec:
+  selector:
+    app: tmwso2portal
+    tier: frontend
+  ports:
+  - protocol: "TCP"
+    port: 80
+    targetPort: 80
+  type: NodePort
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: portaltmwso2
+  labels:
+    app: portaltmwso2
+    tier: frontend
+spec:
+  selector:
+    matchLabels:
+      app: tmwso2portal
+      tier: frontend
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: tmwso2portal
+        tier: frontend
+    spec:
+      containers:
+      - name: portaltmwso2
+        image: tmwso2portal/tmwso2portal
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8081
