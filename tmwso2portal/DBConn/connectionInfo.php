@@ -2,12 +2,12 @@
 // SQL server connection information
 $sql_details = array(
     "user" => "wso_app",
-    "pass" => "",
-    "db"   => "Pswd2019",
+    "pass" => "Pswd2019",
+    "db"   => "wso",
     "host" => "172.20.196.182"
 );
 
-$conn = mysqli_connect("localhost","root","","tmportal");
+$conn = mysqli_connect("172.20.196.182","wso_app","Pswd2019","wso");
 
 // Check connection
 if ($conn === false){

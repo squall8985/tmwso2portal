@@ -12,7 +12,7 @@ $search1 = $_GET['search1'];
 $search2 = $_GET['search2'];
 
 // Table Name
-$table = "sba_sms_online";
+$table = "SBA_SMS_ONLINE";
 
 // Table's primary key
 $primaryKey = "record_id";

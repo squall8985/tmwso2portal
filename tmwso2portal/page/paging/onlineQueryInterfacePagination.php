@@ -8,7 +8,7 @@ $search1 = $_GET["search1"];
 $search2 = $_GET["search2"];
 
 // Table Name
-$table = "sba_trans_log";
+$table = "SBA_TRANS_LOG";
 
 // Table's primary key
 $primaryKey = "record_id";

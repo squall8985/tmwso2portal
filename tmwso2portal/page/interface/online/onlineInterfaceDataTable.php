@@ -6,7 +6,7 @@ require_once('../../../functions/auth.php');
 $rq_uuid = $_GET["rq_uuid"];
 
 // Table Name
-$table = "sba_trans_log";
+$table = "SBA_TRANS_LOG";
 
 // Table's primary key
 $primaryKey = "record_id";

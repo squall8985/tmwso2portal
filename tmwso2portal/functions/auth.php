@@ -1,6 +1,7 @@
 <?php
 // Include database connection details
-include ('../DBConn/connectionInfo.php');
+define('__ROOT__', dirname(dirname(__FILE__)));
+require_once(__ROOT__.'/DBConn/connectionInfo.php');
 
 // Start session
 session_start();

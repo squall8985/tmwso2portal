@@ -57,7 +57,7 @@ if ($result = mysqli_query($conn, $select)) {
             echo "Success login";
         }
 
-        mysqli_free_result($query);
+        mysqli_free_result($result);
         mysqli_close($conn);
         
     } else {
@@ -68,5 +68,5 @@ if ($result = mysqli_query($conn, $select)) {
 }
 
 // Close connection
-mysqli_close($conn);
+// mysqli_close($conn);
 ?>

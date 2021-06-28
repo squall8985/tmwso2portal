@@ -7,7 +7,7 @@ $event_name = $_GET['event_name'];
 $if_type = $_GET['if_type'];
 
 // Table Name
-$table = "sba_configmap";
+$table = "SBA_CONFIGMAP";
 
 // Table's primary key
 $primaryKey = "record_id";
