@@ -8,7 +8,7 @@ $query = "SELECT record_id, event_name, DATE_FORMAT(record_timestamp, '%Y-%m-%d 
                  if_id, if_type, s_name,
                  t_name, processing_endpoint, t_endpoint,
                  frequency
-                 FROM sba_configmap
+                 FROM SBA_CONFIGMAP
                  WHERE record_id = '".$record_id."'";
 
 if ($result = mysqli_query($conn, $query)) {

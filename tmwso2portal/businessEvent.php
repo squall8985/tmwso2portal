@@ -100,7 +100,7 @@ $MODULE = "BUSINESSEVENT";
                                         	<select class="search" name="if_type" id="if_type">
                                             	<option value="">All</option>
                                                 <?php
-                                                    $sqlGetEvent = "SELECT DISTINCT(if_type) FROM sba_configmap WHERE if_type IS NOT NULL ORDER BY if_type ASC";
+                                                    $sqlGetEvent = "SELECT DISTINCT(if_type) FROM SBA_CONFIGMAP WHERE if_type IS NOT NULL ORDER BY if_type ASC";
                                                     $printed = false;
             
                                                     if ($resultEvent = $conn->query($sqlGetEvent)) {
@@ -129,7 +129,7 @@ $MODULE = "BUSINESSEVENT";
                                         	<select class="search" name="event_name" id="event_name">
                                             	<option value="">All</option>
                                                 <?php
-                                                    $sqlGetEvent = "SELECT DISTINCT(event_name) FROM sba_configmap WHERE event_name IS NOT NULL ORDER BY event_name ASC";
+                                                    $sqlGetEvent = "SELECT DISTINCT(event_name) FROM SBA_CONFIGMAP WHERE event_name IS NOT NULL ORDER BY event_name ASC";
                                                     $printed = false;
             
                                                     if ($resultEvent = $conn->query($sqlGetEvent)) {

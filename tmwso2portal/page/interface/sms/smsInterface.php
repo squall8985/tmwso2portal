@@ -10,7 +10,7 @@ $query = "SELECT record_id, message_id, record_type,
                 hand_phone_no, add_property,
                 DATE_FORMAT(record_timestamp, '%Y-%m-%d %H:%i:%s') as record_timestamp,
                 rq_uuid
-                FROM sba_sms_online
+                FROM SBA_SMS_ONLINE
                 WHERE record_id = '".$record_id."'";
 
 if ($result = mysqli_query($conn, $query)) {

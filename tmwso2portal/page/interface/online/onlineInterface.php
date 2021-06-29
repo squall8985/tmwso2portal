@@ -10,7 +10,7 @@ $query = "SELECT DATE_FORMAT(record_created, '%Y-%m-%d %H:%i:%s') as record_crea
                  record_type,
                  event_name,
                  status
-                 FROM sba_trans
+                 FROM SBA_TRANS
                  WHERE record_id = '".$record_id."'";
 
 if ($result = mysqli_query($conn, $query)) {
