@@ -9,7 +9,7 @@ $timestamp = time();
 
 $start = new DateTime("now", new DateTimeZone($tz));
 $start->setTimestamp($timestamp);
-$start->modify("-365 day");
+$start->modify("-1 day");
 
 $end = new DateTime("now", new DateTimeZone($tz));
 $end->setTimestamp($timestamp);

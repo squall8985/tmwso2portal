@@ -27,5 +27,5 @@ if (!$exec) {
     echo $msg;
 }
 
-mysqli_close();
+// mysqli_close();
 ?>

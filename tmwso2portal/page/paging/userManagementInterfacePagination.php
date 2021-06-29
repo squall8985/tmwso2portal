@@ -103,5 +103,5 @@ $where = "(created_timestamp BETWEEN '".$search1."' AND  '".$search2."') ".
 echo json_encode(SSP::simpleCustom($_GET, $sql_details, $table, $primaryKey, $columns, $where));
 
 // Close connection
-mysqli_close();
+// mysqli_close();
 ?>

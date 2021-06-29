@@ -14,7 +14,7 @@ $timestamp = time();
 
 $start = new DateTime("now", new DateTimeZone($tz));
 $start->setTimestamp($timestamp);
-$start->modify("-360 day");
+$start->modify("-1 day");
 
 $end = new DateTime("now", new DateTimeZone($tz));
 $end->setTimestamp($timestamp);
@@ -138,7 +138,7 @@ $MODULE = "ONLINE";
                                         	<select class="search" name="req_status" id="req_status">
                                             	<option value="">All</option>
                                                 <?php
-                                                    $sqlGetStatus = "SELECT DISTINCT(status) FROM sba_trans WHERE status IS NOT NULL ORDER BY status ASC";
+                                                    $sqlGetStatus = "SELECT DISTINCT(status) FROM SBA_TRANS WHERE status IS NOT NULL ORDER BY status ASC";
                                             
                                                     if ($resultStatus = $conn->query($sqlGetStatus)) {
                                                         
@@ -167,7 +167,7 @@ $MODULE = "ONLINE";
                                         	<select class="search" name="event_name" id="event_name">
                                             	<option value="">All</option>
                                                 <?php
-                                                    $sqlGetEvent = "SELECT DISTINCT(event_name) FROM sba_trans WHERE event_name IS NOT NULL ORDER BY event_name ASC";
+                                                    $sqlGetEvent = "SELECT DISTINCT(event_name) FROM SBA_TRANS WHERE event_name IS NOT NULL ORDER BY event_name ASC";
                                                     $printed = false;
             
                                                     if ($resultEvent = $conn->query($sqlGetEvent)) {

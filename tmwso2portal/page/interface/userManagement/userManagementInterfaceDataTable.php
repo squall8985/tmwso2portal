@@ -79,5 +79,5 @@ $where = "id = '".$id."'";
 echo json_encode(SSP::simpleCustom($_GET, $sql_details, $table, $primaryKey, $columns, $where));
 
 // Close connection
-mysqli_close();
+// mysqli_close();
 ?>

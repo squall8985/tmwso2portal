@@ -1,5 +1,7 @@
 <?php
-$timeout = $_GET["timeout"];
+if (!isset($_GET["timeout"])) {
+    $timeout = $_GET["timeout"];
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -32,5 +32,5 @@ $where = "if_type LIKE '%".$if_type."%' AND event_name LIKE '%".$event_name."%'"
 echo json_encode(SSP::simpleCustom($_GET, $sql_details, $table, $primaryKey, $columns, $where));
 
 // Close connection
-mysqli_close();
+// mysqli_close();
 ?>

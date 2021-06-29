@@ -19,9 +19,9 @@ if ($result = mysqli_query($conn, $query)) {
 
         echo json_encode($res);
 
-        // Free result selectiont
-        mysqli_free_result($query);
-        mysqli_close($conn);
+        // Free result selection
+        // mysqli_free_result($query);
+        // mysqli_close($conn);
 
         exit();
     } else {

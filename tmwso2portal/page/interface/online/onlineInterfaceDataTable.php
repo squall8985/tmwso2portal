@@ -55,5 +55,5 @@ $where = "rq_uuid = '".$rq_uuid."' OR rq_msg_id='".$rq_uuid."'";
 echo json_encode(SSP::simpleCustom($_GET, $sql_details, $table, $primaryKey, $columns,$where));
 
 // Close connection
-mysqli_close();
+// mysqli_close();
 ?>
